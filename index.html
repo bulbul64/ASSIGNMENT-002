@@ -1,40 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TechWave</title>
-    <link rel="stylesheet" href="./src/output.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body class="bg-[#1A0B2E] text-white font-inter">
-    
- 
-    <header class="max-w-400  mx-auto">
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-[#1A0B2E] text-white font-inter">
+    <header class="max-w-400 mx-auto">
+      <!-- navbar start  -->
 
-    <!-- navbar start  -->
+      <section class="max-w-300 mx-auto my-7.5 px-5 2xl:p-0">
+        <div class="flex items-center justify-between">
+          <div class="max-w-[219] max-h-8">
+            <img class="w-full" src="assets/TechWave.png" alt="" />
+          </div>
+          <ul class="lg:flex gap-8 font-medium text-[16px] hidden">
+            <li><a href="">About</a></li>
+            <li><a href="">Episodes</a></li>
+            <li><a href="">Host</a></li>
+          </ul>
+          <div class="flex justify-center">
+            <button
+              class="hidden lg:block py-2 px-4 bg-grad bg-linear-to-tr from-[rgb(117,251,0)] to-[rgb(107,39,255)] rounded-[30px] font-semibold text-[16px]"
+            >
+              Subscribe <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <button class="lg:hidden max-w-6 max-h-6">
+              <img class="w-full h-full" src="assets/hamburger-menu.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </section>
 
-        <section class="max-w-300 mx-auto my-7.5 px-5 2xl:p-0">
-         <div class="flex items-center justify-between ">
-            <div class="max-w-[219] max-h-8">
-                <img  class="w-full" src="assets/TechWave.png" alt="">
+      <!-- navbar end  -->
+      <!-- banner start  -->
+
+      <section class="max-w-400 ">
+        <div
+          class="
+  bg-[url('../assets/hero-bg.png')]
+  bg-no-repeat bg-center bg-contain
+  w-full
+  px-4 py-6
+  sm:px-6 sm:py-8
+  lg:p-10
+  flex flex-col justify-center items-center
+  h-75 sm:h-105 md:h-130 lg:h-190
+  relative
+"
+        >
+          <div class="relative top-18 sm:top-9 md:top-5 ">
+            <div class="relative  w-[50%]  sm:w-[50%] md:w-[60%] lg:w-[80%] aspect-square mx-auto"
+>
+              <img class="w-full h-full object-contain" src="assets/hero-circle.png" alt="" />
+
+              <img
+                class="absolute top-[25%] left-[33%] w-[30%]"
+                src="assets/microphone.png"
+                alt=""
+              />
             </div>
-            <ul class="lg:flex gap-8 font-medium text-[16px] hidden ">
-                <li ><a href="">About</a></li>
-                <li><a href="">Episodes</a></li>
-                <li><a href="">Host</a></li>
-            </ul>
-            <div class="flex justify-center">
-                <button class="hidden lg:block py-2 px-4 bg-grad bg-linear-to-tr from-[rgb(117,251,0)] to-[rgb(107,39,255)] rounded-[30px] font-semibold text-[16px]">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
-                <button class="lg:hidden max-w-6 max-h-6">
-                    <img class="w-full h-full" src="assets/hamburger-menu.png" alt="">
+
+            <button
+              class="absolute top-1/4 lg:left-[75%] sm:left-[65%]  left-[55%] -translate-x-1/80 -translate-y-[80%] bg-[#00FF88] px-4 py-2 max-w-18.75 max-h-9.5 text-black rounded-[30px] font-semibold shadow-[0_3px_27px_rgba(0,255,136,0.5)]"
+            >
+              <p>NEW</p>
+            </button>
+          </div>
+
+          <!-- new badge  -->
+
+          <!-- hero text  -->
+
+          <div class="text-center relative top-18 sm:top-9 md:top-5 ">
+            <div>
+              <h4 class="md:text-[60px] text-[40px] font-extrabold">TechWave</h4>
+              <p class="text-[16px] mt-2 mb-6">
+                Your daily dose of tech insights, productivity hacks, and personal growth
+              </p>
+
+              <div class="flex gap-4 justify-center">
+                <button
+                  class="py-2 flex items-center gap-1.5 px-4 text-[12px] bg-grad bg-linear-to-tr from-[rgb(117,251,0)] to-[rgb(107,39,255)] rounded-[30px] font-semibold md:text-[16px]"
+                >
+                  <img src="assets/spotify.png" alt="" /> Listen on Spotify
                 </button>
+                <button
+                  class="py-2 flex items-center text-[12px] gap-1.5 px-4 bg-grad bg-transparent border border-[#00FF88] rounded-[30px] font-semibold lg:text-[16px]"
+                >
+                  <img src="assets/message.png" alt="" /> Subscribe
+                </button>
+              </div>
             </div>
-         </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-    <!-- navbar end  -->
-
+      <!-- banner end  -->
     </header>
-</body>
+  </body>
 </html>
